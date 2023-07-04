@@ -1,1 +1,146 @@
-/* место для вашего кода */
+.header {
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  justify-items: center;
+  align-items: center;
+  height: auto;
+  padding: 93px 49px 95px 51px;
+}
+
+.header__menu {
+  justify-self: start;
+}
+
+.header__links-list {
+  display: flex;
+  gap: 33px;
+  font-size: 18px;
+  list-style: circle;
+}
+
+.header__links-list-item_no-bullit {
+  list-style: none;
+}
+
+.header__link {
+  text-underline-offset: 4px;
+}
+
+.header__link_active {
+  text-decoration: none;
+}
+
+.header__logo {
+  display: block;
+  height: 105px;
+}
+
+.header__logo-image {
+  height: 100%;
+}
+
+.header__address {
+  justify-self: end;
+  width: 240px;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 24.3px;
+  text-underline-offset: 4px;
+}
+
+
+
+.cover {
+  display: flex;
+  flex-direction: column;
+  gap: 135px;
+  position: relative;
+  background-image: url(../images/cover.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 165px 50px 50px 50px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.6000000238418579;
+  width: 100%;
+  height: 100%;
+}
+
+.cover__title {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.aligned-text {
+  color: #FFF;
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 115%;
+  letter-spacing: 30px;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 1;
+}
+
+.aligned-text_center {
+  align-self: center;
+  line-height: 100%;
+  padding-right: 60px;
+}
+
+.aligned-text_right {
+  align-self: flex-end;
+  line-height: 100%;
+}
+
+.letter-spacing-extended {
+  letter-spacing: 60px;
+}
+
+.no-letter-spacing {
+  letter-spacing: 0;
+}
+
+.cover__description {
+  display: flex;
+  gap: 78px;
+  justify-content: end;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.cover__description-text,
+.bet-button {
+  color: #FFF;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.cover__description-text {
+  word-spacing: 17px;
+  line-height: 28px;
+}
+
+.cover__description-text_word-spacing-large {
+  word-spacing: 22px;
+  line-height: normal;
+}
+
+.bet-button {
+  padding: 0;
+  border: 1px solid #FFF;
+  background-color: transparent;
+  width: 257px;
+  height: 52px;
+}
+
+
